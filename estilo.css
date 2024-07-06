@@ -1,0 +1,68 @@
+body {
+    font-family: cursive;
+    color: white;
+}
+
+footer {
+    background-color: #f5dcf3;
+    color: rgb(212, 4, 248);
+}
+
+section {
+    background-color: #eaffbd;
+    color: rgb(227, 243, 8);
+}
+
+nav {
+    align-items: initial;
+    background-color: #99d8ff;
+    color: white;
+}
+
+header {
+    background-color: #fbd4d4;
+    background-image: url(Assets/imagens/logo.png);
+    background-size: 100px;
+    color: white;
+}
+    
+
+
+article {
+    align-items: flex-end;
+}
+
+.grid-wrapper>* {
+    min-height: 50px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 240px 1fr;
+    gap: 1rem;
+}
+
+
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+}
+
+.grid-wrapper>main {
+    background-color: #ccc;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, ifr);
+}
+
+main {
+    width: 100%;
+    
+}
